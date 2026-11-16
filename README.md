@@ -80,15 +80,20 @@ skills/dopagaki-frontend/SKILL.md ← 薄い入口。詳細は references/ に�
   - [research/20261116-psych-refs.md](research/20261116-psych-refs.md) — 心理学の実証文献レビュー（実証/議論中/俗説の3分類、H1〜H7 判定）
   - [research/20261116-a11y-and-risk.md](research/20261116-a11y-and-risk.md) — WCAG・前庭障害・自動再生・規制
   - [research/20261116-neighbor-concepts.md](research/20261116-neighbor-concepts.md) — 近縁概念（brainrot / hyperpop / 脳汁 など）との差分
+  - [research/20261116-game-feel.md](research/20261116-game-feel.md) — ゲームの手触り（screen shake / hitstop / イージング）
+  - [research/20261116-motion-metrics.md](research/20261116-motion-metrics.md) — DevTools での動きの計測手順
+  - [research/20261116-sound-design.md](research/20261116-sound-design.md) — 音（自動再生・AudioContext・無音の使い方）
+- [corpus/README.md](corpus/README.md) — 素材の集め方
+- [corpus/source-map.md](corpus/source-map.md) — 素材ID と 資料ID（`SRC-*`）の対応表
 - [skills/dopagaki-production/references/sources.md](skills/dopagaki-production/references/sources.md) — 資料台帳
 - [evals/rubric.md](evals/rubric.md) — ドパガキ度ルブリック草案と制御可能性ゲート
 - [tools/build-index.mjs](tools/build-index.mjs) — 索引生成・整合性検査
 
 ## 現在の状態と次の一手
 
-- 骨組みはできた。素材と観察が入り始めた段階（2026-11-16 時点で `node tools/build-index.mjs` → 素材 9 / 観察 7 / 傾向 0 / 規則 0）。
+- 骨組みはできた。素材と観察が入り始めた段階（2026-11-16 時点で `node tools/build-index.mjs` → 素材 14 / 観察 8 / 傾向 0 / 規則 0）。
 - [ ] 素材を20件まで増やす（手元の作品＋実在作品。`corpus/private/` に録画10〜20秒を必ず添える）
-- [x] 観察を10本書く → 現在7本。徴候の語彙（S番号）を揃える
+- [x] 観察を10本書く → 現在8本。徴候の語彙（S番号）を揃える
 - [ ] 最初の傾向を1本立てる（3観察以上が同じ徴候を指したら）
 - [ ] 最初の規則を1本、強度つきで書く
 - [ ] スキル2つの統合方針を決める（[ADR 0004](docs/04-decisions/0004-two-structures-merge.md)）

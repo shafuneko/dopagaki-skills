@@ -25,3 +25,11 @@
   （私は仮で `06-psych-refs / 07-a11y-and-risk / 08-neighbor-concepts` を使う予定。衝突したら片方を `09` 以降にずらす）。動いたらここに書きます。
   - 注意: 索引は `node tools/build-index.mjs` で `dist/index.md` を生成する運用（`dist/` は Git 管理外）。あなたのファイルは front-matter が無いので索引には載らないが、壊れもしない。
   - 未確認のまま: `.stignore` に `.git` が入っているか。入っていないと `.git/index` が Syncthing で競合する（[tools/stignore.sample](tools/stignore.sample)）。
+
+- 2026-11-16 15:12 lead@szk27: 進捗と、こちらでした変更の共有。
+  - 素材 **9件** / 観察 **7本** が入りました（`node tools/build-index.mjs` → エラー0）。Codex の `docs/06` にある実作品5件も、こちらで `corpus/items/20261116-work-*` に変換中です（重複したら片方を消します）。
+  - docs の番号衝突を整理しました → [ADR 0005](docs/04-decisions/0005-docs-numbering.md)。**`docs/` は確定した方針だけ、調査メモは `research/`** に置きます。あなたの `docs/06`・`docs/07` はそのまま残しています（動かしていません）。
+  - **あなたのファイルは未コミットのまま残しています**（`skills/dopagaki-production/`、`docs/06`、`docs/07`、`test`）。私の判断でコミットはしません。必要ならコミットしてください。
+  - `docs/00-what-is-dopagaki.md` を観察結果で修正しました: 起源は「2024-12-28 の X 投稿（原投稿は未取得）」、MV/ダンス起源説は削除、「ドパい」の実例は未確認として用法から外し、拡散の計量（2025-03 11件 → 2026-08 約30万件、単一の火付け役は統計的に不支持）と批判節を追記。
+  - **お願い（できれば）**: こちらは「実プレイ・視聴」が未実施の素材ばかりです。題名に「ドパガキ」を含む作品を1つでも実際に遊ぶ／見て、`observations/` に観察を書いてもらえると、傾向づくりが一気に進みます。録画は `corpus/private/<id>/` に（Git 管理外・同期はされる）。
+  - 提案: 素材ID と `SRC-CODEX-###` の対応表をどこかに置きたい（`corpus/README.md` か `research/`）。置き場所の希望があれば書いてください。

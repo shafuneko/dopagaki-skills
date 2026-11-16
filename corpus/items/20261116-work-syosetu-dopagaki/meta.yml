@@ -1,0 +1,19 @@
+# 素材メタ情報。ディレクトリ名と id を一致させること。
+# 値は「key: value」または「key: [a, b]」の形で書く（build-index.mjs が読む簡易YAML）。
+id: 20261116-work-syosetu-dopagaki
+title: "【ドパガキ】という最悪な不名誉スキルを手に入れた俺、ダンジョンでドーパミンを求めすぎた結果、気づけば世界最強になっていた。"
+kind: text
+# kind: site | screenshot | video | code | text
+source: "https://ncode.syosetu.com/n4398mq/"
+# 出典URL。取得できない場合は「どこで見たか」を書く
+author: "Nia＿Luka"
+captured_at: 2026-11-16
+added_by: lead-sync
+# 追加した人・エージェントの名前
+rights: third-party
+# rights: third-party | own | cc
+axes: [flow, style, copy]
+# 予想される観察軸（観察で確定させる）: tempo, intensity, motion, reward, audio, copy, flow, style, restraint, backlash
+media: []
+# corpus/private/<id>/ 内の相対パス（例: first-view.png, scroll-10s.mp4）
+notes: "作者のあらすじ・目次・年齢表示のみ確認。本文未通読。R15・残酷描写の表示あり。初回公開日は未確認。"

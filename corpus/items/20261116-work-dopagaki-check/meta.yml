@@ -1,0 +1,19 @@
+# 素材メタ情報。ディレクトリ名と id を一致させること。
+# 値は「key: value」または「key: [a, b]」の形で書く（build-index.mjs が読む簡易YAML）。
+id: 20261116-work-dopagaki-check
+title: "ドパガキ度チェック"
+kind: site
+# kind: site | screenshot | video | code | text
+source: "https://asobi.gracetrade.co.jp/dopagaki-check/"
+# 出典URL。取得できない場合は「どこで見たか」を書く
+author: "ひと息パズル"
+captured_at: 2026-11-16
+added_by: lead-sync
+# 追加した人・エージェントの名前
+rights: third-party
+# rights: third-party | own | cc
+axes: [tempo, reward, copy, intensity]
+# 予想される観察軸（観察で確定させる）: tempo, intensity, motion, reward, audio, copy, flow, style, restraint, backlash
+media: []
+# corpus/private/<id>/ 内の相対パス（例: first-view.png, scroll-10s.mp4）
+notes: "「どんなゲーム？」「遊び方」「よくある質問」のみ確認。制限時間60秒・対象数字7は配信元の記載値。実プレイ未実施。"
