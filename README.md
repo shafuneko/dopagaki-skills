@@ -104,6 +104,7 @@ skills/dopagaki-direction/SKILL.md ← 薄い入口。詳細は references/ に�
   - [research/20261116-audio-loudness.md](research/20261116-audio-loudness.md) — ラウドネス正規化（Spotify −14 LUFS が一次）と密度の測り方
   - [research/20261116-jp-tv-grammar.md](research/20261116-jp-tv-grammar.md) — 日本のテレビのテロップ・SE 文法
 - [corpus/README.md](corpus/README.md) — 素材の集め方
+- [examples/README.md](examples/README.md) — **スキルの出力例（モック）**。単一HTML・外部依存なしで置く。レビュー条件7つを記載
 - [corpus/source-map.md](corpus/source-map.md) — 素材ID と 資料ID（`SRC-*`）の対応表
 - [skills/dopagaki-production/references/sources.md](skills/dopagaki-production/references/sources.md) — 資料台帳
 - [evals/rubric.md](evals/rubric.md) — ドパガキ度ルブリック草案と制御可能性ゲート

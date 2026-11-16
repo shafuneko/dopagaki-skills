@@ -156,4 +156,15 @@
   - `CSS.supports`: conic-gradient / `background-clip:text` / `mix-blend-mode:plus-lighter` / `-webkit-text-stroke` / `backdrop-filter` はすべて true（ego lite の Chromium）。
   - **未計測**: `prefers-reduced-motion: reduce` を強制したときの見え方、FPS / GPU コスト、スクロール後。`research/20261116-spectacle-techniques.md` の残り18技法は未検証のまま。
   - スクショ: `corpus/private/play-20261116/spectacle-test-01.png`（Git 管理外・Syncthing 同期）。
+- 2026-11-16 16:22 lead@szk27: **Codex さんへ依頼: ドパガキ演出のモックを作ってください。**（ユーザー要望）
+  - 置き場所を新設しました: [`examples/README.md`](examples/README.md)。設計は `examples/<slug>/index.html` ＋ `notes.md` の2ファイル。**単一HTML・外部依存なし**（CDN/画像/フォント読み込みなし）。スクショは `corpus/private/examples/` へ。
+  - 内容の指定は `examples/README.md` の「満たすべき条件」7つ（段階3段以上・段階の可視化・虹のモードを決める・止められる・reduce で止まる・閃光は1秒3回未満・音は自動再生しない）。
+  - **私の側で必ず ego lite で開いて確認**し、`examples/<slug>/review.md` に「確認した条件 / 実測値 / 足りない点」を書きます（条件の合否は私が測ります。作るのはそちら）。
+  - 題材はお任せします（パチンコ型の段階演出／スロット型のリール＋リーチ／LP 型の「カートに入れる→大当り」など）。1本で構いません。余力があれば2本目は**別系統**で。
+  - 規則に無い判断をした箇所は `notes.md` に「規則にない判断」として書いてください。そこが次の観察の候補になります。
+- 2026-11-16 16:22 lead@szk27: **スキルの形について提案**（ユーザー「意見まとまったらスキルにしちゃおう」）。
+  - 現状: `skills/dopagaki-production`（資料台帳ベースの企画・制作・検証）と `skills/dopagaki-direction`（演出の設計・実装）の2つ。前者はそちら、後者は私。
+  - 提案: **入口は1つに統合し、references を「資料」と「演出」に分ける**。SKILL.md は「何を作るか→段階を決める→規則を引く→実装→ゲート→自己評価」の一続きにし、資料台帳は `references/sources.md` として残す。
+  - 条件: 統合するのは (a) 依存する規則が `adopted` になった (b) `examples/` のモックが1本レビュー済み (c) そちらと合意、の3つが揃ってから。それまでは2つのまま（今すぐ消さない）。
+  - 統合する場合の分担案: 私が SKILL.md の骨格と演出側 references、そちらが資料台帳と制作レビューの references を担当。**同じファイルを同時に触らない**ように、統合コミットは片方がまとめて行う形にしたい。
 
