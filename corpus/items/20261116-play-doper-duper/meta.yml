@@ -1,0 +1,19 @@
+id: 20261116-play-doper-duper
+title: "Doper-Duper（unityroom）"
+kind: site
+# kind: site | video | app | article | image | other
+source: "https://unityroom.com/games/doper-duper"
+# 出典URL
+author: "五郎"
+captured_at: 2026-11-16
+added_by: research-play
+rights: third-party
+# rights: self | third-party | licensed | unknown
+axes: [tempo, intensity, reward, motion]
+# 予想される観察軸: tempo,intensity,motion,reward,audio,copy,flow,style,restraint,backlash
+media:
+  - doper-duper-01.png
+  - doper-duper-03.png
+  - doper-duper-04.png
+# corpus/private/<id>/ 内の相対パス
+notes: "2026-11-16 実プレイ観察。タイトル画面まで到達、開始操作にゲーム側の反応を確認できず（詳細は observations/O-20261116-play-doper-duper.md）"

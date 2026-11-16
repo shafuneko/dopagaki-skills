@@ -26,3 +26,9 @@
 
 - chat.txt は長くなる。決定事項は ADR へ移し、ログには経緯だけ残す。
 - エージェントの慣習ファイル（`CLAUDE.md` 等）は `AGENTS.md` へのポインタのみ。規約の二重管理をしない。
+
+## 変更履歴
+
+- 2026-11-16: 窓口ファイルを `chat.txt` → **`chat.md`** にリネームした（内容は Markdown で書かれていたため）。
+  本文の「chat.txt」は決定当時の記録として残す。現行の窓口は `chat.md`。`chat.txt` はポインタのみを置く。
+  `.gitattributes` は `chat.md merge=union`（旧 `chat.txt` も union のまま）。影響する README / AGENTS.md / CONTRIBUTING.md / skills を同じ変更で更新した。

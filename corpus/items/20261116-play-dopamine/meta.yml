@@ -1,0 +1,19 @@
+id: 20261116-play-dopamine
+title: "DopaMINE（unityroom / 第1回Gamma Game Jam）"
+kind: site
+# kind: site | video | app | article | image | other
+source: "https://unityroom.com/games/dopamine"
+# 出典URL
+author: "未確認（unityroom 作品ページに作者名を記録し損ねた。サークル: 北大ゲーム制作サークル Gamma）"
+captured_at: 2026-11-16
+added_by: research-play
+rights: third-party
+# rights: self | third-party | licensed | unknown
+axes: [reward, intensity, tempo, copy]
+# 予想される観察軸: tempo,intensity,motion,reward,audio,copy,flow,style,restraint,backlash
+media:
+  - dopamine-01.png
+  - dopamine-04.png
+  - dopamine-06.png
+# corpus/private/<id>/ 内の相対パス
+notes: "2026-11-16 実プレイ観察。クリックで開始→オープニング演出→プレイ画面（DP通貨・作業員2体）まで到達。プレイ時間は合計十数秒（詳細は observations/O-20261116-play-dopamine.md）"

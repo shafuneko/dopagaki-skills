@@ -1,0 +1,119 @@
+[
+  {
+    "slug": "light-the-way",
+    "ok": true,
+    "url": "https://light-the-way.jp/10th-anniversary/",
+    "title": "LIGHT THE WAY 10th Anniversary Website | LIGHT THE WAY Inc. | 株式会社ライト・ザ・ウェイ",
+    "elements": 3019,
+    "animations": 1420,
+    "infiniteAnimations": 1354,
+    "animDuration": {
+      "n": 1420,
+      "median": 10000,
+      "p10": 5442.851667281909,
+      "p90": 87019.27986261362,
+      "under150": 0
+    },
+    "transitionDuration": {
+      "n": 700,
+      "median": 400,
+      "p10": 300,
+      "p90": 800,
+      "under150": 13
+    },
+    "style": {
+      "blend": 0,
+      "filter": 0,
+      "backdrop": 0,
+      "boxShadow": 0
+    },
+    "text": {
+      "chars": 2938,
+      "words": 199
+    },
+    "images": 887,
+    "reducedMotion": false,
+    "viewport": {
+      "w": 1377,
+      "h": 598
+    }
+  },
+  {
+    "slug": "sakuma-55th",
+    "ok": true,
+    "url": "https://www.sakumaseika.com/ichigomilk1970_2025/",
+    "title": "サクマいちごみるく_55周年キャンペーン_サクマ製菓公式",
+    "elements": 38,
+    "animations": 0,
+    "infiniteAnimations": 0,
+    "animDuration": {
+      "n": 0,
+      "median": null,
+      "p10": null,
+      "p90": null,
+      "under150": 0
+    },
+    "transitionDuration": {
+      "n": 0,
+      "median": null,
+      "p10": null,
+      "p90": null,
+      "under150": 0
+    },
+    "style": {
+      "blend": 0,
+      "filter": 0,
+      "backdrop": 0,
+      "boxShadow": 0
+    },
+    "text": {
+      "chars": 0,
+      "words": 0
+    },
+    "images": 3,
+    "reducedMotion": false,
+    "viewport": {
+      "w": 1377,
+      "h": 598
+    }
+  },
+  {
+    "slug": "ahkah-holiday",
+    "ok": true,
+    "url": "https://www.ahkah.jp/ext/2026Holiday_mymood_mylove/index.html",
+    "title": "AHKAH / アーカー | 【公式】 | オフィシャルサイト",
+    "elements": 1235,
+    "animations": 1,
+    "infiniteAnimations": 1,
+    "animDuration": {
+      "n": 1,
+      "median": 3400,
+      "p10": 3400,
+      "p90": 3400,
+      "under150": 0
+    },
+    "transitionDuration": {
+      "n": 251,
+      "median": 300,
+      "p10": 300,
+      "p90": 400,
+      "under150": 0
+    },
+    "style": {
+      "blend": 0,
+      "filter": 45,
+      "backdrop": 18,
+      "boxShadow": 0
+    },
+    "text": {
+      "chars": 2100,
+      "words": 212
+    },
+    "images": 120,
+    "reducedMotion": false,
+    "viewport": {
+      "w": 1377,
+      "h": 598
+    }
+  }
+]

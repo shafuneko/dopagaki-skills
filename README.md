@@ -5,7 +5,7 @@
 
 > このリポジトリは2人（＋各自のエージェント）が P2P 同期（Syncthing）で同じ作業ツリーを共有し、Git は履歴と共有のために使う。
 > 作業前に必ず [AGENTS.md](AGENTS.md) と [CONTRIBUTING.md](CONTRIBUTING.md) の「同期と衝突」を読むこと。破壊的な git 操作は相手の環境を壊す。
-> 連絡は [chat.txt](chat.txt)（追記のみ）。
+> 連絡は [chat.md](chat.md)（追記のみ）。
 
 ## これは何か / 何でないか
 
@@ -20,10 +20,10 @@
 | L | 層 | 場所 | 状態（2026-11-16） |
 |---|---|---|---|
 | L0 | 定義・前提・仮説 | `docs/` | あり（+ Codex の調査メモ） |
-| L1 | 素材 | `corpus/` | 調査中（テンプレのみ・実作品の候補あり） |
-| L2 | 観察 | `observations/` | 空（テンプレ＋記入例） |
-| L3 | 傾向 | `patterns/` | 空 |
-| L4 | 規則 | `rules/` | 空 |
+| L1 | 素材 | `corpus/` | 24件（実作品・実サイト・記事。`private/` にスクショ） |
+| L2 | 観察 | `observations/` | 17本（すべて `draft`） |
+| L3 | 傾向 | `patterns/` | 4本（すべて `draft`・confidence low/mid） |
+| L4 | 規則 | `rules/` | 2本（**draft のみ。2人合意で `adopted` に上げる**） |
 | L5 | スキル | `skills/` | 2つのスキル（役割分担は [skills/README.md](skills/README.md)） |
 | L6 | 検証 | `evals/` | ルブリック草案 |
 
@@ -67,7 +67,7 @@ skills/dopagaki-frontend/SKILL.md ← 薄い入口。詳細は references/ に�
 
 - [AGENTS.md](AGENTS.md) — エージェントがこのリポジトリで作業するときの規約（両側共通）
 - [CONTRIBUTING.md](CONTRIBUTING.md) — 2人運用・同期・衝突回避・昇格ルール
-- [chat.txt](chat.txt) — 共通の窓口（追記のみ）
+- [chat.md](chat.md) — 共通の窓口（追記のみ）
 - [docs/00-what-is-dopagaki.md](docs/00-what-is-dopagaki.md) — ドパガキとは何か、このリポジトリでの扱い
 - [docs/01-method.md](docs/01-method.md) — 抽出パイプラインと品質基準
 - [docs/02-taxonomy.md](docs/02-taxonomy.md) — 観察軸（何を見て、どう測るか）と外部参照値
@@ -95,11 +95,16 @@ skills/dopagaki-frontend/SKILL.md ← 薄い入口。詳細は references/ に�
 
 ## 現在の状態と次の一手
 
-- 骨組みはできた。素材・観察・傾向が入り始めた段階（2026-11-16 時点で `node tools/build-index.mjs` → 素材 14 / 観察 8 / 傾向 3 / 規則 0）。
-- [ ] 素材を20件まで増やす（手元の作品＋実在作品。`corpus/private/` に録画10〜20秒を必ず添える）
-- [x] 観察を10本書く → 現在8本。徴候の語彙（S番号）を揃える
-- [x] 最初の傾向を3本立てる（`P-switch-rate-over-mean` / `P-edge-burst` / `P-stop-ability`。すべて `draft`・confidence low/mid）
-- [ ] 最初の規則を1本、強度つきで書く
-- [ ] 実測を1件入れる（`tools/measure/probe.js` を DevTools に貼り、結果を `observations/` へ）
+- 骨組みはできた。素材・観察・傾向が入り始めた段階（2026-11-16 時点で `node tools/build-index.mjs` → 素材 24 / 観察 17 / 傾向 4 / 規則 2、エラー0）。
+- [x] 素材を20件まで増やす（手元の作品＋実在作品。`corpus/private/` に録画10〜20秒を必ず添える）
+- [x] 観察を10本書く → 現在14本。徴候の語彙（S番号）を揃える
+- [x] 最初の傾向を4本立てる（`P-switch-rate-over-mean` / `P-edge-burst` / `P-stop-ability` / `P-two-tier-time`。すべて `draft`・confidence low/mid）
+- [x] 最初の規則を draft で2本書く（`R-tempo-switch-rate-tail` / `R-tempo-edge-burst`。**2人合意までは draft**）
+- [x] 実測を入れる（ego lite で3サイトを実行時計測 → [O-20261116-lp-runtime-check.md](observations/O-20261116-lp-runtime-check.md)。宣言ベースの中央値と実行値が一致した）
+- [ ] 規則を `adopted` にする（傾向のレビュー合意 → 規則のレビュー。Codex の指摘は `## 反論・保留` に保存済み）
+- [x] unityroom の実プレイ観察（doper-duper / dopa-wick / dopamine）を `observations/` に入れる（3本。**いずれも「開始」まで到達できず部分観察**である点を各観察に明記）
+- [x] 面前の色刺激を実測する（ego lite でタイトル画面を8フレーム撮影 → [O-20261116-play-dopa-wick.md](observations/O-20261116-play-dopa-wick.md) §8。**色相が約2.4秒で一巡・平均彩度0.58で一定・輝度は動かない**＝点滅せずに大面積の色変化で刺激する型）
+- [ ] 「色相巡回」を徴候として横断確認する（他作品・他サイトで同じ型が出るか。出れば傾向に昇格）
+- [ ] 評定（ドパい度の主観スコア）を集める。**現在0件**で、傾向の体感側の裏づけが無い
 - [ ] スキル2つの統合方針を決める（[ADR 0004](docs/04-decisions/0004-two-structures-merge.md)）
 - [ ] `.stignore` に `.git` を入れて、Syncthing が `.git` を同期しないようにする（[tools/stignore.sample](tools/stignore.sample)）

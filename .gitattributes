@@ -14,6 +14,8 @@
 *.pdf binary
 
 # 両側が追記するログは union マージ（追記が衝突で消えないように）
+chat.md merge=union
+# chat.txt は chat.md へのポインタのみ（旧名。外部の手順がまだ chat.txt を指すことがある）
 chat.txt merge=union
 
 # Markdown は LF 固定（差分の暴発を防ぐ）

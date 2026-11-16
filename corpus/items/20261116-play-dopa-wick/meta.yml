@@ -1,0 +1,19 @@
+id: 20261116-play-dopa-wick
+title: "ドパWick（unityroom）"
+kind: site
+# kind: site | video | app | article | image | other
+source: "https://unityroom.com/games/dopa-wick"
+# 出典URL
+author: "未確認（unityroom 作品ページに作者名を記録し損ねた）"
+captured_at: 2026-11-16
+added_by: research-play
+rights: third-party
+# rights: self | third-party | licensed | unknown
+axes: [reward, copy, intensity, audio]
+# 予想される観察軸: tempo,intensity,motion,reward,audio,copy,flow,style,restraint,backlash
+media:
+  - dopa-wick-01.png
+  - dopa-wick-02.png
+  - dopa-wick-05.png
+# corpus/private/<id>/ 内の相対パス
+notes: "2026-11-16 実プレイ観察。タイトル画面までは到達したが、開始操作にゲーム側の反応を確認できず（詳細は observations/O-20261116-play-dopa-wick.md）"

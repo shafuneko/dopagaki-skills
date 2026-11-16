@@ -1,0 +1,11 @@
+id: 20261116-ev-hn-textdensity
+title: "Hacker News（news.ycombinator.com トップページ）"
+kind: site
+source: "https://news.ycombinator.com/"
+author: "Y Combinator"
+captured_at: 2026-11-16
+added_by: research-evidence
+rights: third-party
+axes: [intensity, style]
+media: []
+notes: "傾向ドラフト #5「密度の源泉が複数ある（画像枚数 vs DOM・タイポグラフィ）」の3件目。CSS と HTML を HTTP 取得して数えた。描画・スクリーンショットは未取得。"

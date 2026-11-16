@@ -1,0 +1,11 @@
+const task = await taskSpace(4);
+const page = task.page("p1");
+const dir = "C:/Users/szk27/work/dopagaki-skills/corpus/private/play-20261116/";
+const popupPromise = page.waitForEvent("popup", { timeout: 20000 });
+await page.click('text="別タブで開く"');
+const pop = await popupPromise;
+await pop.waitForLoadState();
+console.log(JSON.stringify({ label: pop.label, url: await pop.url(), title: await pop.title() }));
+await pop.waitForTimeout(7000);
+await pop.screenshot({ path: dir + "dopa-wick-02.png" });
+console.log("shot-02");

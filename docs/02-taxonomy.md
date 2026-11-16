@@ -1,6 +1,6 @@
 # 観察軸 — 何を見て、どう測るか
 
-素材を見るときの切り口。**軸は固定ではない**（増減してよい。変えたら README 索引・ADR・chat.txt の3点セット）。
+素材を見るときの切り口。**軸は固定ではない**（増減してよい。変えたら README 索引・ADR・chat.md の3点セット）。
 
 - **徴候（sign）**: 観察できる最小単位。観察ファイル内で `S-1` のように番号を振る。
 - 1素材ですべての軸を見ない。まず2〜3軸を仮置きし、徴候が出た軸だけ記録する。空欄も情報。
@@ -245,7 +245,12 @@
 | 点滅の閾値（面積） | 同時点滅 341×256 = 87,296 CSS px（10度視野の25%）以下、または輝度差10%未満 | [W3C 2.3.1](https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold.html) |
 | 自動アニメ停止の3条件 | 自動開始・5秒超・他の内容と並置（5秒は生理学値ではなく設計判断） | [W3C 2.2.2 Intent](https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html) |
 | テロップの提示速度 | Netflix 成人 20字/秒・子ども 17字/秒、42字/行・最大2行 | [Netflix TTSG](https://partnerhelp.netflixstudios.com/hc/en-us/articles/215758617-Timed-Text-Style-Guide-General-Requirements) |
-| ラウドネス | −23 LUFS / −1 dBTP（EBU R128）。配信は Spotify/YouTube −14 LUFS 前後が目安 | [EBU R128](https://tech.ebu.ch/docs/r/r128.pdf) |
+| ラウドネス | −23 LUFS / −1 dBTP（EBU R128）。配信目標は Spotify −14 LUFS（一次情報）/ YouTube −14・Apple −16（二次情報）/ TikTok は未確認 | [EBU R128](https://tech.ebu.ch/docs/r/r128.pdf) / [Spotify](https://support.spotify.com/us/artists/article/loudness-normalization/) / [audio-loudness 調査](../research/20261116-audio-loudness.md) |
+| 正規化下の「大きさ」 | 配信は音量を正規化するため、マスターを上げても再生音量は上がらない。**音量ではなく密度・トランジェント（PLR/crest factor）で測る** | [audio-loudness 調査](../research/20261116-audio-loudness.md) |
+| テロップの実務値（二次情報） | 4文字で1秒、1行16文字・2行以内、1画面30〜35文字、編集者は1.5〜2倍速く読む前提 | [video-knowledge](https://video-knowledge.com/archives/1042) / [jp-tv-grammar 調査](../research/20261116-jp-tv-grammar.md) |
+| テロップの量（一次情報に近い） | 情報番組の文字は6mm・画面下2行、コンピュータ化後は1放送で500枚以上 | [フジテレビ美術コラム](https://www.fujitv.co.jp/art/column/) / [jp-tv-grammar 調査](../research/20261116-jp-tv-grammar.md) |
+| SE の文法 | 1動作1音、場面転換/正解/不正解/カウントダウンで音を替える。標準の長さ・間隔の数値は一次二次とも見つからず**未確認** | [jp-tv-grammar 調査](../research/20261116-jp-tv-grammar.md) |
+| 邦画のカット間隔 | 20作品の平均 704.75ショット / 115.34分 ≒ 9.8秒/ショット（テレビの統計は存在せず未確認） | [jp-tv-grammar 調査](../research/20261116-jp-tv-grammar.md) |
 | 画面振動（ゲーム） | トラウマ値 0〜1・毎秒約1.0減衰・振幅は二乗比例、数Hz〜10Hz、0.15〜0.4秒 | [game-feel 調査](../research/20261116-game-feel.md) |
 | ヒットストップ | 軽35ms / 中55ms / 重70ms / クリティカル90ms、120ms超はラグと読まれる | [game-feel 調査](../research/20261116-game-feel.md) |
 | LP の transition 実測（宣言ベース） | 9サイトの中央値 300〜500ms（明示プロパティのみだと4サイトが0件） | [lp-css-measure](../research/20261116-lp-css-measure.md) |

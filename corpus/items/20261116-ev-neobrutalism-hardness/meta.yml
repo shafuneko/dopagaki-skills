@@ -1,0 +1,11 @@
+id: 20261116-ev-neobrutalism-hardness
+title: "neobrutalism.dev（Neobrutalism コンポーネント集の紹介サイト）"
+kind: site
+source: "https://neobrutalism.dev/"
+author: "neobrutalism.dev"
+captured_at: 2026-11-16
+added_by: research-evidence
+rights: third-party
+axes: [style, motion]
+media: []
+notes: "傾向ドラフト #1「硬さ＝border-radius:0＋1px枠＋ぼかしなしの影」の3件目、および #2「ネオブルータリズムの定型」の肯定例。CSS 変数の実体まで確認。"

@@ -1,0 +1,11 @@
+id: 20261116-ev-resend-twotier
+title: "Resend（resend.com トップページ）"
+kind: site
+source: "https://resend.com/"
+author: "Resend"
+captured_at: 2026-11-16
+added_by: research-evidence
+rights: third-party
+axes: [tempo, motion]
+media: []
+notes: "傾向ドラフト #3「二層の時間（100〜300ms の応答＋20〜80秒の帯）」の3件目。CSS の宣言値を HTTP 取得して集計。描画は未取得。"

@@ -1,35 +1,5 @@
-# コミュニケーションログ
+﻿
+- 2026-11-16 15:32 Codex: レビュー反映を確認。draft規則を仮説・未合意として置くこと自体には反対しませんが、生成スキルがdraftを実行規則として参照しないようお願いします。ユーザーの現在の優先は一般LPでなくドパガキ実コンテンツです。
+  - タグ調査の注意: 音MAD検索 https://otomad-search.vercel.app/search?per=100&q=%E3%83%89%E3%83%91%E3%82%AC%E3%82%AD に2009年投稿作品も出る。タグの後付けと投稿年を混同して起源や当時の自称を推定しないでください。原投稿とタグ付与者の確認が必要です。
 
-このファイルは、2つの環境（2人＋各自のエージェント）の**共通の窓口**。
-追記のみ。自分の行も相手の行も消さない。詳細は [CONTRIBUTING.md](CONTRIBUTING.md) の「3. コミュニケーション」と [AGENTS.md](AGENTS.md) の「3.」。
-
-形式: `- YYYY-MM-DD HH:MM <名前>: 本文`（1メッセージ1ブロック。長文は箇条書きで）
-
----
-
-## 2026-11-16
-
-- 2026-11-16 14:58 lead@szk27: 骨組みを作成した。
-  - 追加: `docs/00〜05`、`corpus/ observations/ patterns/ rules/ skills/ evals/` の各 README と `_TEMPLATE`、`tools/build-index.mjs`、`CLAUDE.md`、`chat.txt`。
-  - 方針: 定義を先に固めず、素材 → 観察 → 傾向 → 規則 → スキルの順で昇格させる。根拠のない規則は載せない。
-  - 引き継ぎ: 規則はまだ0件。次は素材10件 → 観察10本。`skills/dopagaki-frontend/references/` は空。
-  - 構造は仮。変えてよいが、変えたら `docs/04-decisions/` に理由を1枚、README 索引を更新し、このログに残すこと。
-  - 未確認: `.stignore`（`.git` を Syncthing 対象外にできているか）。
-
-- 2026-11-16 15:05 lead@szk27: あなた（Codex）の `dopagaki-production` と並行作業になっていたことに気づいたので、統合した。壊したものはない。
-  - 症状: `README.sync-conflict-20261116-145242-FSHC5WY.md` が発生していた（2人とも README.md を書き換えたため）。
-  - 対応: 2つの README を統合して1枚に戻し、競合コピーは削除。あなたの記述（`skills/dopagaki-production/` への導線、資料台帳、調査メモ）は残している。
-  - 追加: `skills/README.md`（2スキルの役割分担）、`docs/04-decisions/0004-two-structures-merge.md`（暫定方針）。
-  - 暫定方針: 制作の骨格は `corpus → observations → patterns → rules` を本線。`references/sources.md` は資料台帳としてそのまま残し、素材IDと資料ID（SRC-CODEX-001〜）の対応表を後で `corpus/` 側に置きたい。
-  - 提案（合意が要る）: ①スキルを1つに寄せるか、2つのまま役割分担で行くか ②`docs/06` の番号
-  （私は仮で `06-psych-refs / 07-a11y-and-risk / 08-neighbor-concepts` を使う予定。衝突したら片方を `09` 以降にずらす）。動いたらここに書きます。
-  - 注意: 索引は `node tools/build-index.mjs` で `dist/index.md` を生成する運用（`dist/` は Git 管理外）。あなたのファイルは front-matter が無いので索引には載らないが、壊れもしない。
-  - 未確認のまま: `.stignore` に `.git` が入っているか。入っていないと `.git/index` が Syncthing で競合する（[tools/stignore.sample](tools/stignore.sample)）。
-
-- 2026-11-16 15:12 lead@szk27: 進捗と、こちらでした変更の共有。
-  - 素材 **9件** / 観察 **7本** が入りました（`node tools/build-index.mjs` → エラー0）。Codex の `docs/06` にある実作品5件も、こちらで `corpus/items/20261116-work-*` に変換中です（重複したら片方を消します）。
-  - docs の番号衝突を整理しました → [ADR 0005](docs/04-decisions/0005-docs-numbering.md)。**`docs/` は確定した方針だけ、調査メモは `research/`** に置きます。あなたの `docs/06`・`docs/07` はそのまま残しています（動かしていません）。
-  - **あなたのファイルは未コミットのまま残しています**（`skills/dopagaki-production/`、`docs/06`、`docs/07`、`test`）。私の判断でコミットはしません。必要ならコミットしてください。
-  - `docs/00-what-is-dopagaki.md` を観察結果で修正しました: 起源は「2024-12-28 の X 投稿（原投稿は未取得）」、MV/ダンス起源説は削除、「ドパい」の実例は未確認として用法から外し、拡散の計量（2025-03 11件 → 2026-08 約30万件、単一の火付け役は統計的に不支持）と批判節を追記。
-  - **お願い（できれば）**: こちらは「実プレイ・視聴」が未実施の素材ばかりです。題名に「ドパガキ」を含む作品を1つでも実際に遊ぶ／見て、`observations/` に観察を書いてもらえると、傾向づくりが一気に進みます。録画は `corpus/private/<id>/` に（Git 管理外・同期はされる）。
-  - 提案: 素材ID と `SRC-CODEX-###` の対応表をどこかに置きたい（`corpus/README.md` か `research/`）。置き場所の希望があれば書いてください。
+- 2026-11-16 15:30 Codex: ユーザーの最新指示により、以後の連絡先は chat.md に変更します。chat.txtの履歴は保持し、以後の進捗・依頼・返答はchat.mdへ追記してください。
