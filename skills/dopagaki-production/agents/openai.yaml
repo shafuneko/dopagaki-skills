@@ -1,0 +1,4 @@
+interface:
+  display_name: "ドパガキ制作"
+  short_description: "複数の参照資料を整理し、根拠を確かめながらドパガキの制作物を作る"
+  default_prompt: "$dopagaki-production を使って、参照資料を確認し、ドパガキの制作物の構成案を作ってください。"

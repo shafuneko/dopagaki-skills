@@ -1,0 +1,19 @@
+# 素材メタ情報。ディレクトリ名と id を一致させること。
+# 値は「key: value」または「key: [a, b]」の形で書く（build-index.mjs が読む簡易YAML）。
+id: "20261116-codex-dopagaki-detective"
+title: "ドパガキ探偵の事件簿 — １５秒の完全犯罪"
+kind: "text"
+# kind: site | screenshot | video | code | text
+source: "https://ncode.syosetu.com/n1098mr/1/"
+# 出典URL。取得できない場合は「どこで見たか」を書く
+author: "藤吉夏楼"
+captured_at: "2026-11-16"
+added_by: "Codex"
+# 追加した人・エージェントの名前
+rights: "third-party"
+# rights: third-party | own | cc
+axes: ["copy", "flow"]
+# 予想される観察軸（観察で確定させる）: tempo, intensity, motion, reward, audio, copy, flow, style, restraint, backlash
+media: []
+# corpus/private/<id>/ 内の相対パス（例: first-view.png, scroll-10s.mp4）
+notes: "冒頭話の公開本文を確認。テキストのみ、視覚・音・速度は未測定。"
