@@ -86,6 +86,7 @@ skills/dopagaki-frontend/SKILL.md ← 薄い入口。詳細は references/ に�
   - [research/20261116-jp-web-excess.md](research/20261116-jp-web-excess.md) — 過剰表現の系譜（点滅規格・広告費・Flash・脳汁横丁）
   - [research/20261116-restraint-patterns.md](research/20261116-restraint-patterns.md) — 抑制の実装カタログ（停止・reduce・音量・点滅回避）
   - [research/20261116-copy-typography.md](research/20261116-copy-typography.md) — 煽りコピー・極太タイポ・可読性の下限
+  - [research/20261116-lp-css-measure.md](research/20261116-lp-css-measure.md) — 実在LP 9件の CSS 宣言ベース実測（transition 中央値 300–500ms）
 - [corpus/README.md](corpus/README.md) — 素材の集め方
 - [corpus/source-map.md](corpus/source-map.md) — 素材ID と 資料ID（`SRC-*`）の対応表
 - [skills/dopagaki-production/references/sources.md](skills/dopagaki-production/references/sources.md) — 資料台帳

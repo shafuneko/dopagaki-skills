@@ -242,5 +242,14 @@
 | WCAG 2.3.1 | 1秒に3回超の閃光の禁止 | [W3C](https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold.html) |
 | WCAG 2.3.3 (AAA) | 操作起点のアニメを無効化可能に（`prefers-reduced-motion`） | [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/At-rules/@media/prefers-reduced-motion) |
 | 前庭障害 | パララックスでめまい・吐き気。対策は「視差効果を減らす」 | [WebAxe](https://www.webaxe.org/vestibular-issues-parallax-design) |
+| 点滅の閾値（面積） | 同時点滅 341×256 = 87,296 CSS px（10度視野の25%）以下、または輝度差10%未満 | [W3C 2.3.1](https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold.html) |
+| 自動アニメ停止の3条件 | 自動開始・5秒超・他の内容と並置（5秒は生理学値ではなく設計判断） | [W3C 2.2.2 Intent](https://www.w3.org/WAI/WCAG22/Understanding/pause-stop-hide.html) |
+| テロップの提示速度 | Netflix 成人 20字/秒・子ども 17字/秒、42字/行・最大2行 | [Netflix TTSG](https://partnerhelp.netflixstudios.com/hc/en-us/articles/215758617-Timed-Text-Style-Guide-General-Requirements) |
+| ラウドネス | −23 LUFS / −1 dBTP（EBU R128）。配信は Spotify/YouTube −14 LUFS 前後が目安 | [EBU R128](https://tech.ebu.ch/docs/r/r128.pdf) |
+| 画面振動（ゲーム） | トラウマ値 0〜1・毎秒約1.0減衰・振幅は二乗比例、数Hz〜10Hz、0.15〜0.4秒 | [game-feel 調査](../research/20261116-game-feel.md) |
+| ヒットストップ | 軽35ms / 中55ms / 重70ms / クリティカル90ms、120ms超はラグと読まれる | [game-feel 調査](../research/20261116-game-feel.md) |
+| LP の transition 実測（宣言ベース） | 9サイトの中央値 300〜500ms（明示プロパティのみだと4サイトが0件） | [lp-css-measure](../research/20261116-lp-css-measure.md) |
+
+**注意**: 上の LP 実測は 2026-11-16 時点の CSS 宣言の集計（実ブラウザの実行時アニメ・CSS-in-JS は未計測、n=9）。「派手なLPは速い」という予想に反して 300〜500ms に集中した。速度の判断は平均値ではなく**局所のバースト**で見る（仮説 H8）。
 
 CSS 実装の候補（様式の観察用）: `backdrop-filter`、`mix-blend-mode`、`conic-gradient`、`clip-path` + `steps()`、`box-shadow: 4px 4px 0 #000`。
