@@ -95,10 +95,11 @@ skills/dopagaki-frontend/SKILL.md ← 薄い入口。詳細は references/ に�
 
 ## 現在の状態と次の一手
 
-- 骨組みはできた。素材と観察が入り始めた段階（2026-11-16 時点で `node tools/build-index.mjs` → 素材 14 / 観察 8 / 傾向 0 / 規則 0）。
+- 骨組みはできた。素材・観察・傾向が入り始めた段階（2026-11-16 時点で `node tools/build-index.mjs` → 素材 14 / 観察 8 / 傾向 3 / 規則 0）。
 - [ ] 素材を20件まで増やす（手元の作品＋実在作品。`corpus/private/` に録画10〜20秒を必ず添える）
 - [x] 観察を10本書く → 現在8本。徴候の語彙（S番号）を揃える
-- [ ] 最初の傾向を1本立てる（3観察以上が同じ徴候を指したら）
+- [x] 最初の傾向を3本立てる（`P-switch-rate-over-mean` / `P-edge-burst` / `P-stop-ability`。すべて `draft`・confidence low/mid）
 - [ ] 最初の規則を1本、強度つきで書く
+- [ ] 実測を1件入れる（`tools/measure/probe.js` を DevTools に貼り、結果を `observations/` へ）
 - [ ] スキル2つの統合方針を決める（[ADR 0004](docs/04-decisions/0004-two-structures-merge.md)）
 - [ ] `.stignore` に `.git` を入れて、Syncthing が `.git` を同期しないようにする（[tools/stignore.sample](tools/stignore.sample)）
