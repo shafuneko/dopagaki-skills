@@ -1,0 +1,8 @@
+Error: page label not found: p-mahjong. Managed Pages in task space 6: p1. task.page(label) only refers to an existing Page; create one with await task.newPage()
+    at [describeMissingPage] (file:///C:/Program%20Files/Citro%20Labs/ego%20lite/Application/0.6.3.14/[eval1]:19493:16)
+    at async file:///C:/Program%20Files/Citro%20Labs/ego%20lite/Application/0.6.3.14/[eval1]:20428:19
+    at async #resolve (file:///C:/Program%20Files/Citro%20Labs/ego%20lite/Application/0.6.3.14/[eval1]:20425:23)
+    at async #evaluate (file:///C:/Program%20Files/Citro%20Labs/ego%20lite/Application/0.6.3.14/[eval1]:20437:22)
+RESULT {"url":{},"shots":["goto error: Error: page label not found: p-mahjong. Managed Pages in task space 6: p1. task.page(label) only refers to an existing Page; create one with await task.newPage(","shot 1 error: Error: page label not found: p-mahjong. Managed Pages in task space 6: p1. task.page(label) only refers to an existing Page; create one with await task.newPage(","shot 2 error: Error: page label not found: p-mahjong. Managed Pages in task space 6: p1. task.page(label) only refers to an existing Page; create one with await task.newPage(","shot 3 error: Error: page label not found: p-mahjong. Managed Pages in task space 6: p1. task.page(label) only refers to an existing Page; create one with await task.newPage("]}
+
+ego's nodejs process exited with code 1.

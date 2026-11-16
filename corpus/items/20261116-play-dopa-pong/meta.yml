@@ -1,0 +1,15 @@
+id: 20261116-play-dopa-pong
+title: DOPA PONG ARCADE（60秒CPU対戦・DOPA SLOT / FEVER LEVEL つき）
+kind: site
+source: https://dopa-pong.vercel.app/
+author: 不明（Vercel 上の個人制作と推測。作者名の記載は確認していない）
+captured_at: 2026-11-16
+added_by: lead@szk27
+rights: third-party
+axes: [intensity, reward, tempo, style, flow]
+media:
+  - ../../private/play-20261116/dopa-pong-01-title.png
+  - ../../private/play-20261116/dopa-pong-02-start.png
+  - ../../private/play-20261116/dopa-pong-03-play.png
+  - ../../private/play-20261116/dopa-pong-04-play.png
+notes: notes.md

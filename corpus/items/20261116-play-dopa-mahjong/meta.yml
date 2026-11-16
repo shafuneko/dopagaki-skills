@@ -1,0 +1,12 @@
+id: 20261116-play-dopa-mahjong
+title: ドパ麻雀 ミニゲーム ピンズ勝負（タイトル画面）
+kind: site
+source: https://dopa.rotenkogames.com/
+author: ROTENKO GAMES（サイト表記）
+captured_at: 2026-11-16
+added_by: lead
+rights: third-party
+axes: [style, intensity, copy, motion]
+media:
+  - ../../private/play-20261116/dopa-mahjong-03.png
+notes: notes.md

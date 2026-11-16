@@ -40,7 +40,7 @@ patterns/P-<slug>.md             ← 傾向。条件と反例を必ず書く
 rules/R-<domain>-<slug>.md        ← 規則。強度(1-5)・条件・根拠IDを持つ
         │  タスク向けに再編
         ▼
-skills/dopagaki-frontend/SKILL.md ← 薄い入口。詳細は references/ に置く
+skills/dopagaki-direction/SKILL.md ← 薄い入口。詳細は references/ に置く
 ```
 
 根拠は常に逆向きに辿れる（規則 → 傾向 → 観察 → 素材）。辿れない規則は存在してはいけない。
@@ -58,7 +58,13 @@ skills/dopagaki-frontend/SKILL.md ← 薄い入口。詳細は references/ に�
 | スキル | 役割 | 入口 |
 |---|---|---|
 | `dopagaki-production` | 資料台帳（原典・該当箇所）に基づく企画・制作・検証。出典と創作の区別を重視 | [SKILL.md](skills/dopagaki-production/SKILL.md) |
-| `dopagaki-frontend` | 観察軸・強度・規則の引き方・実装・制御可能性ゲート | [SKILL.md](skills/dopagaki-frontend/SKILL.md) |
+| `dopagaki-direction` | **ドパガキ演出（パチンコ・スロット系の虹色・閃光・段階演出）の設計と実装**。強度1〜5、段階ラダー、規則の引き方、制御可能性ゲート、ルブリック自己評価 | [SKILL.md](skills/dopagaki-direction/SKILL.md) |
+
+> `dopagaki-frontend` は 2026-11-16 に `dopagaki-direction` へ改名した（「ドパガキっぽい作品を作る」から
+> 「ドパガキ**演出**を作る」へ対象を絞ったため。旧名は読み替え）。references は
+> [pachinko-slot-grammar](skills/dopagaki-direction/references/pachinko-slot-grammar.md) /
+> [spectacle-recipes](skills/dopagaki-direction/references/spectacle-recipes.md) /
+> [escalation-ladder](skills/dopagaki-direction/references/escalation-ladder.md)。
 
 統合の経緯と暫定方針は [docs/04-decisions/0004-two-structures-merge.md](docs/04-decisions/0004-two-structures-merge.md)。
 **どちらかに寄せる判断はまだしていない**（両方残す。合意したらどちらかを入口にする）。
@@ -76,6 +82,8 @@ skills/dopagaki-frontend/SKILL.md ← 薄い入口。詳細は references/ に�
 - [docs/05-hypotheses.md](docs/05-hypotheses.md) — 作業仮説の台帳
 - [docs/06-content-survey-codex-20261116.md](docs/06-content-survey-codex-20261116.md) — 実作品の初回調査（Codex）
 - [docs/07-similar-content-codex-20261116.md](docs/07-similar-content-codex-20261116.md) — 類似コンテンツの調査（Codex）
+- [research/20261116-dopagaki-direct-content-codex.md](research/20261116-dopagaki-direct-content-codex.md) — ドパガキそのもののコンテンツ調査（Codex。アプリ・PLiCy・itch.io・エッセイ・図鑑）
+- [skills/dopagaki-production/references/content-cases.md](skills/dopagaki-production/references/content-cases.md) — 作品事例（Codex）
 - [research/README.md](research/README.md) — 調査メモの置き場（索引の対象外）
   - [research/20261116-psych-refs.md](research/20261116-psych-refs.md) — 心理学の実証文献レビュー（実証/議論中/俗説の3分類、H1〜H7 判定）
   - [research/20261116-a11y-and-risk.md](research/20261116-a11y-and-risk.md) — WCAG・前庭障害・自動再生・規制
@@ -87,6 +95,14 @@ skills/dopagaki-frontend/SKILL.md ← 薄い入口。詳細は references/ に�
   - [research/20261116-restraint-patterns.md](research/20261116-restraint-patterns.md) — 抑制の実装カタログ（停止・reduce・音量・点滅回避）
   - [research/20261116-copy-typography.md](research/20261116-copy-typography.md) — 煽りコピー・極太タイポ・可読性の下限
   - [research/20261116-lp-css-measure.md](research/20261116-lp-css-measure.md) — 実在LP 9件の CSS 宣言ベース実測（transition 中央値 300–500ms）
+  - [research/20261116-pachinko-slot-grammar.md](research/20261116-pachinko-slot-grammar.md) — パチンコ・スロットの演出文法（保留・先読み・信頼度・虹・段階）
+  - [research/20261116-spectacle-cases.md](research/20261116-spectacle-cases.md) — 実機・実作品の演出事例（エヴァ15 / パチスロナイツ / eFガンダムSEED ほか）
+  - [research/20261116-spectacle-techniques.md](research/20261116-spectacle-techniques.md) — 虹色・発光・光線の CSS/SVG 実装カタログ T01–T22（**未検証**）
+  - [research/20261116-quiet-hits.md](research/20261116-quiet-hits.md) — 静かなのに当たった作品（Balatro / Wordle / Lofi Girl ほか）の反例
+  - [research/20261116-visual-density.md](research/20261116-visual-density.md) — 視覚的複雑さの測り方と probe.js への追加指標案
+  - [research/20261116-skill-authoring.md](research/20261116-skill-authoring.md) — Agent Skills の仕様と description の書き方
+  - [research/20261116-audio-loudness.md](research/20261116-audio-loudness.md) — ラウドネス正規化（Spotify −14 LUFS が一次）と密度の測り方
+  - [research/20261116-jp-tv-grammar.md](research/20261116-jp-tv-grammar.md) — 日本のテレビのテロップ・SE 文法
 - [corpus/README.md](corpus/README.md) — 素材の集め方
 - [corpus/source-map.md](corpus/source-map.md) — 素材ID と 資料ID（`SRC-*`）の対応表
 - [skills/dopagaki-production/references/sources.md](skills/dopagaki-production/references/sources.md) — 資料台帳
@@ -95,11 +111,16 @@ skills/dopagaki-frontend/SKILL.md ← 薄い入口。詳細は references/ に�
 
 ## 現在の状態と次の一手
 
-- 骨組みはできた。素材・観察・傾向が入り始めた段階（2026-11-16 時点で `node tools/build-index.mjs` → 素材 24 / 観察 17 / 傾向 4 / 規則 2、エラー0）。
+- 骨組みはできた。**スキルは「ドパガキ演出」特化へ転換済み**（2026-11-16）。素材・観察・傾向・規則が入り始めた段階（`node tools/build-index.mjs` → 素材 27 / 観察 20 / 傾向 4 / 規則 5、エラー0）。
 - [x] 素材を20件まで増やす（手元の作品＋実在作品。`corpus/private/` に録画10〜20秒を必ず添える）
 - [x] 観察を10本書く → 現在14本。徴候の語彙（S番号）を揃える
 - [x] 最初の傾向を4本立てる（`P-switch-rate-over-mean` / `P-edge-burst` / `P-stop-ability` / `P-two-tier-time`。すべて `draft`・confidence low/mid）
 - [x] 最初の規則を draft で2本書く（`R-tempo-switch-rate-tail` / `R-tempo-edge-burst`。**2人合意までは draft**）
+- [x] パチンコ・スロットの演出文法を調査し、スキルを演出特化へ書き換える（[references/pachinko-slot-grammar.md](skills/dopagaki-direction/references/pachinko-slot-grammar.md)）
+- [x] 演出特化の規則を3本追加（`R-intensity-stage-ladder` / `R-style-rainbow-hue-cycle` / `R-intensity-preflight-choice`。すべて draft）
+- [x] `dopa-pong`（[O-20261116-play-dopa-pong.md](observations/O-20261116-play-dopa-pong.md)）と `ドパ麻雀`（[O-20261116-play-dopa-mahjong.md](observations/O-20261116-play-dopa-mahjong.md)）を記録
+- [ ] `R-style-rainbow-two-modes`（虹＝終端記号か基調か）を実作品で検算する。虹色が「常時」か「瞬間」かを10作品で数える
+- [ ] ドパ麻雀の対局画面を再取得する（重くて renderer が無応答。小さいウィンドウ / reduce 強制で再試行）
 - [x] 実測を入れる（ego lite で3サイトを実行時計測 → [O-20261116-lp-runtime-check.md](observations/O-20261116-lp-runtime-check.md)。宣言ベースの中央値と実行値が一致した）
 - [ ] 規則を `adopted` にする（傾向のレビュー合意 → 規則のレビュー。Codex の指摘は `## 反論・保留` に保存済み）
 - [x] unityroom の実プレイ観察（doper-duper / dopa-wick / dopamine）を `observations/` に入れる（3本。**いずれも「開始」まで到達できず部分観察**である点を各観察に明記）

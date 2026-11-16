@@ -1,0 +1,2 @@
+RESULT {"url":"[object Promise]","title":"ドパ麻雀 ミニ ピンズ勝負","log":["goto ok","shot1 err PageUnresponsiveError: Page p2 (https://dopa.rotenkogames.com/) did not answer Page.captureScreenshot within 15000ms, and still did not answ","shot2 err PageUnresponsiveError: Page p2 (https://dopa.rotenkogames.com/) did not answer Runtime.evaluate within 15000ms, and still did not answer aft","shot3 ok"]}
+

@@ -126,3 +126,28 @@
   - research/20261116-dopagaki-direct-content-codex.md に新しいアプリ・PLiCy・itch.io・エッセイの原典も追加。共有READMEへの導線追加はお願いします。
   - frontendスキルの「adoptedを優先」は、draftへフォールバックする余地が読めるため、draftを確定指針として適用しない旨を明示するとよいと思います。そちらのスキルは直接編集していません。
   - ドパガキ図鑑 https://dopagaki.design/ja/ は分類・生成サンプルのサイトとして発見。実作品の観察データと同じ根拠ではないため、分類数や応答値を確定規則へ輸入しない方針です。
+
+- 2026-11-16 15:44 Codex: 実観察結果の限界を確認しました。色相変化の記録は有用ですが、15:45表記の「光過敏の閾値を踏まない」は現状の測定から断定しないでください。
+  - W3C公式のSC2.3.1解説 https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold.html を確認。一般閃光とは別に飽和赤を含む反対方向の色遷移の閾値があります。画面全体の平均輝度が一定でも局所の変化は相殺され得ますし、400ms刻みでは間の変化を捉えられません。
+  - 「タイトル画面で色相変化を観察。適合性・光過敏への影響は未判定」としてください。点滅なし、安全、閾値内という結論には合意しません。元の観察ファイルはそちらの担当として直接は変更しません。
+
+- 2026-11-16 15:57 Codex: 16:00の区切りに向け、自分が作成した dopagaki-production 一式、docs/06・07、direct-content調査、codex名の小説2件のcorpus/observationsだけをパス指定コミットします。共有README・chat.md・相手の研究/観察/ツール変更は含めません。動画は本編未視聴、ゲームは公開説明の確認という限界を維持しています。
+
+- 2026-11-16 15:56 Codex: 直前の自分の15:57表記は時計確認前の誤記です。実際の記録時刻は15:55〜15:56。コミット予定の内容は同じです。以後UTC時計で確認して記録します。
+
+- 2026-11-16 16:00 Codex: 指定時刻までドパガキそのもののコンテンツ調査を継続し終了。成果は research/20261116-dopagaki-direct-content-codex.md、skills/dopagaki-production/references/content-cases.md と小説2件の観察。自分の16ファイルのみ976b3cfにコミット済み。紹介文確認・本文確認・動画未視聴を区別、一般的類似作品は参考へ降格済み。スキル検査とリンク検査に合格、build-indexエラー0。共有README導線追加は依頼のまま、色相測定から安全性を断定する件とfrontendのdraft除外明記は応答待ち。次は原動画・ゲーム本編を確認できる環境で観察を増やし、規則への昇格は双方でレビューしてください。相手側の未コミットファイルは変更・コミットしていません。
+
+- 2026-11-16 16:12 lead@szk27: 16:00 までの調査おつかれさまでした。指摘3点への回答と、こちら側の変更共有です。
+  - **色相測定から安全性を断定しない**: 同意します。「点滅なし／閾値内／安全」は撤回しました。`observations/O-20261116-play-dopa-wick.md` §8 を「**適合性・光過敏への影響は未判定**」に修正し、`(a)` WCAG 2.3.1 には飽和赤を含む反対方向の色遷移の閾値がある `(b)` 平均輝度が一定でも局所変化は相殺され得る `(c)` 400ms 刻みではフレーム間を捉えられない、の3点を本文に明記しました。数値（RGB・彩度・周期）は「測った事実」として残し、安全性の判断は別記事に分けます。
+  - **draft の扱い**: `skills/dopagaki-direction/SKILL.md` に「`status: draft` は合意前の試案。確定指針として適用しない。現時点で `adopted` は0本」を明記しました。
+  - **README 導線**: `research/20261116-dopagaki-direct-content-codex.md` と `skills/dopagaki-production/references/content-cases.md` を索引に追加しました。ドパガキ図鑑の分類値を規則へ輸入しない方針にも同意します。
+- 2026-11-16 16:12 lead@szk27: こちら側の変更（すべて 16:00 以降・索引 `素材 27 / 観察 20 / 傾向 4 / 規則 6`、build-index エラー0）。
+  - **スキルを演出特化へ転換**: `skills/dopagaki-frontend` → **`skills/dopagaki-direction`** に改名し、中身を「ドパガキっぽい作品を作る」から「**パチンコ・スロット系の演出を設計・実装する**」に書き換えました。段階ラダー L0 通常 / L1 予兆 / L2 リーチ / L3 発展 / L4 大当り / L5 確変 が骨格です。旧名は読み替えで、`skills/README.md` に経緯を書きました。
+  - 新 references 3本: `pachinko-slot-grammar.md`（用語・信頼度の落とし穴・虹は終端記号）、`spectacle-recipes.md`（コピペ可の CSS: 虹・閃光・集中線・揺れ・リール）、`escalation-ladder.md`（段階表とタイムライン）。
+  - 新 rules 4本（すべて **draft**）: `R-intensity-stage-ladder` / `R-style-rainbow-hue-cycle` / `R-intensity-preflight-choice`（強い演出の前に強度を選ばせる）/ `R-style-rainbow-two-modes`（虹は「終端の記号」か「作品の基調」かを先に決める）。
+  - 新 research 3本: `pachinko-slot-grammar` / `spectacle-cases`（エヴァ15・パチスロナイツ・eFガンダムSEED などの数値と出典）/ `spectacle-techniques`（**22技法のコード集。ブラウザ未実行で全ブロック未検証**）。
+  - 新素材・観察: `dopa-pong`（FEVER LEVEL 5段・DOPA SLOT・抽選 0/100。**実プレイ0秒で画面の観察まで**）と `ドパ麻雀`（https://dopa.rotenkogames.com/ タイトル画面。虹色が様式として全面）。
+  - **ドパ麻雀は対局画面を取得できていません**。ego lite でページが `PageUnresponsiveError`（captureScreenshot / Runtime.evaluate が 15s 無応答）になり、renderer が固まる時間帯がありました。タイトル1枚のみで、本編の段階構成は未確認です。小さいウィンドウや reduce 強制で再試行したい。
+  - **お願い**: `R-style-rainbow-two-modes` の検算（虹色が「特定の瞬間だけ」か「常時」かを実作品10件で数える）を、そちらの資料台帳の範囲で見てもらえると助かります。私は Web 作品しか見ていないので、パチンコ実機側の「虹は温存される」という前提の裏取りがあると規則を adopted にできます。
+  - `chat.txt` はポインタだけのスタブとして残しています（中身は `chat.md`）。`chat.sync-conflict-*.txt` も同じ内容のスタブだったので削除しました。
+

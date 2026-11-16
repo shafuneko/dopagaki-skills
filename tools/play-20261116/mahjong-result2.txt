@@ -1,0 +1,6 @@
+PageUnresponsiveError: Page p1 (https://dopa.rotenkogames.com/) did not answer Runtime.evaluate within 15000ms, and still did not answer after Page.stopLoading, so its renderer is probably hung. Continue on a new Page from task.newPage(), or close this Page and open it again.
+    at #describeUnresponsivePage (file:///C:/Program%20Files/Citro%20Labs/ego%20lite/Application/0.6.3.14/[eval1]:20906:27)
+    at async #withPage (file:///C:/Program%20Files/Citro%20Labs/ego%20lite/Application/0.6.3.14/[eval1]:20868:19)
+    at async file:///C:/Users/szk27/work/dopagaki-skills/tools/play-20261116/round-10.mjs:11:3
+
+ego's nodejs process exited with code 1.

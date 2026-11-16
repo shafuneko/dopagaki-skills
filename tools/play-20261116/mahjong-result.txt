@@ -1,0 +1,6 @@
+PageEvaluationTimeoutError: page.evaluate timed out after 15000ms and the renderer stopped responding. The current execution was stopped and the Page recovered, but work scheduled earlier may still produce late side effects.
+    at recoverPageEvaluationTimeout (file:///C:/Program%20Files/Citro%20Labs/ego%20lite/Application/0.6.3.14/[eval1]:21239:16)
+    at async file:///C:/Program%20Files/Citro%20Labs/ego%20lite/Application/0.6.3.14/[eval1]:20449:27
+    at async file:///C:/Program%20Files/Citro%20Labs/ego%20lite/Application/0.6.3.14/[eval1]:17798:28
+
+ego's nodejs process exited with code 1.
