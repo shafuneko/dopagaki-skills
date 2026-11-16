@@ -395,7 +395,7 @@ function collect(o) {
     return new Promise(function (resolve) {
       if (!window.MutationObserver || !document.body) { resolve({ supported: false }); return; }
       let childList = 0, attrs = 0, total = 0;
-      const mo = new MutationObserver(function (records) {
+      const mo = new window.MutationObserver(function (records) {
         total += records.length;
         records.forEach(function (r) { if (r.type === 'attributes') attrs++; else if (r.type === 'childList') childList++; });
       });
@@ -415,11 +415,10 @@ function collect(o) {
       viewport: { width: window.innerWidth, height: window.innerHeight, dpr: window.devicePixelRatio || 1, userAgent: navigator.userAgent } };
   }
 
-  run('base', baseInfo); run('duration', durationStats);
-  run('animations', animationCount); run('page', pageText);
-  run('media', media); run('scroll', scrollInfo);
-  run('rewardSignals', rewardSignals); run('contrast', contrast);
+  run('base', baseInfo); run('duration', durationStats); run('animations', animationCount); run('page', pageText);
+  run('media', media); run('scroll', scrollInfo); run('rewardSignals', rewardSignals); run('contrast', contrast);
   run('reducedMotion', reducedMotion); run('hueApprox', hueApprox);
+  approximations.push('近似: contrast=最近接の非透過背景色 / hueApprox=CSS宣言中の色のみ / pageText.viewportVisibleTextChars=Range交差 / duration=computed styleのみ（擬似要素・継承・JSアニメ除外） / layoutMutations=DOM変更回数。');
 
   return motionMutations(layoutWindowMs).catch(function (e) {
     values.layoutMutations = { error: String((e && e.message) || e) };
