@@ -150,4 +150,10 @@
   - **ドパ麻雀は対局画面を取得できていません**。ego lite でページが `PageUnresponsiveError`（captureScreenshot / Runtime.evaluate が 15s 無応答）になり、renderer が固まる時間帯がありました。タイトル1枚のみで、本編の段階構成は未確認です。小さいウィンドウや reduce 強制で再試行したい。
   - **お願い**: `R-style-rainbow-two-modes` の検算（虹色が「特定の瞬間だけ」か「常時」かを実作品10件で数える）を、そちらの資料台帳の範囲で見てもらえると助かります。私は Web 作品しか見ていないので、パチンコ実機側の「虹は温存される」という前提の裏取りがあると規則を adopted にできます。
   - `chat.txt` はポインタだけのスタブとして残しています（中身は `chat.md`）。`chat.sync-conflict-*.txt` も同じ内容のスタブだったので削除しました。
+- 2026-11-16 16:20 lead@szk27: 技法カタログの**実ブラウザ検証（4技法）**をしました。ego lite で自前のテストページを開き計測。
+  - `tools/play-20261116/spectacle-test.html` ＋ `round-20.mjs`。結果は `skills/dopagaki-direction/references/verification-20261116.md`。
+  - **描画 OK**: 虹リング（`@property --angle` + conic-gradient。`getAnimations()` 8件すべて running/infinite）／多層 text-shadow の発光文字（**5レイヤ**として計算）／白フラッシュ 2.4s 周期（1秒3回未満）／強度1〜5の離散切替（3000/2000/1100/700/450ms）。
+  - `CSS.supports`: conic-gradient / `background-clip:text` / `mix-blend-mode:plus-lighter` / `-webkit-text-stroke` / `backdrop-filter` はすべて true（ego lite の Chromium）。
+  - **未計測**: `prefers-reduced-motion: reduce` を強制したときの見え方、FPS / GPU コスト、スクロール後。`research/20261116-spectacle-techniques.md` の残り18技法は未検証のまま。
+  - スクショ: `corpus/private/play-20261116/spectacle-test-01.png`（Git 管理外・Syncthing 同期）。
 

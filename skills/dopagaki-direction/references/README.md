@@ -8,6 +8,7 @@
 1. [`escalation-ladder.md`](escalation-ladder.md) — 段階の表とタイムラインを先に埋める
 2. [`pachinko-slot-grammar.md`](pachinko-slot-grammar.md) — 段階名・仕掛けの語彙を確認
 3. [`spectacle-recipes.md`](spectacle-recipes.md) — 虹色・発光・光線・揺れ・文字・記号のコード
+4. [`verification-20261116.md`](verification-20261116.md) — どのレシピが実際に描画確認済みか（ego lite での計測）
 4. `SKILL.md` §4 の必須ゲート
 5. [evals/rubric.md](../../../evals/rubric.md) で自己評価
 

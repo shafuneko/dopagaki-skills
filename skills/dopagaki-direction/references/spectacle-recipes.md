@@ -2,6 +2,7 @@
 
 実装のコピペ用。**ブラウザでの動作確認は一部のみ**（各節に「未検証」と書いた）。
 数値は出発点で、作品内で一貫させることが優先。
+虹リング・多層 shadow・白フラッシュ・強度1〜5切替の4つは ego lite で**描画確認済み**（[verification-20261116.md](verification-20261116.md)）。
 
 - 前提: 暗い背景（`#0b0b0d` 前後）＋高彩度3〜4色
 - 段階は `data-stage="L2"` のような属性で切り替える（[`escalation-ladder.md`](escalation-ladder.md)）
