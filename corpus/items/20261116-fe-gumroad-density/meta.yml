@@ -1,0 +1,14 @@
+# 素材メタ情報。ディレクトリ名と id を一致させること。
+# 値は「key: value」または「key: [a, b]」の形で書く（build-index.mjs が読む簡易YAML）。
+id: 20261116-fe-gumroad-density
+title: "gumroad.com — 商品グリッドの密度・CSSマーキー・150ms のマイクロインタラクション"
+kind: site
+source: "https://gumroad.com/"
+author: "Gumroad, Inc."
+captured_at: 2026-11-16
+added_by: "research-fe"
+rights: third-party
+axes: [intensity, style, tempo, motion]
+media: []
+# corpus/private/<id>/ 内の相対パス（例: first-view.png, scroll-10s.mp4）
+notes: "静的取得のみ（HTML 129,867字 + CSS 1本 161,478字）。描画・スクショなし。計測は観察 O-20261116-fe-gumroad-density を参照。"

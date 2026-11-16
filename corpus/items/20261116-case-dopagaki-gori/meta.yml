@@ -1,0 +1,12 @@
+# 素材メタ情報。ディレクトリ名と id を一致させること。
+id: 20261116-case-dopagaki-gori
+title: "ドパガキ氷つくってみた"
+kind: site
+source: "https://unityroom.com/games/dopagakigoori"
+author: "ドーパミン水族館（スタジオかめこもり / ペギンン / Ask.A）"
+captured_at: 2026-11-16
+added_by: research-case
+rights: third-party
+axes: [intensity, motion, reward, audio, flow, restraint, backlash]
+media: []
+notes: "ブラウザゲーム。光・効果音・集中線・全画面フラッシュの後、BGMを止めて「本編を開始しますか」と切り替える構成。"

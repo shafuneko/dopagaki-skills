@@ -1,0 +1,14 @@
+# 素材メタ情報。ディレクトリ名と id を一致させること。
+# 値は「key: value」または「key: [a, b]」の形で書く（build-index.mjs が読む簡易YAML）。
+id: 20261116-fe-tinybird-hardborder
+title: "tinybird.co — 200/300ms に量子化した遷移・1px 枠・backdrop-filter"
+kind: site
+source: "https://www.tinybird.co/"
+author: "Tinybird"
+captured_at: 2026-11-16
+added_by: "research-fe"
+rights: third-party
+axes: [style, motion, tempo, backlash]
+media: []
+# corpus/private/<id>/ 内の相対パス（例: first-view.png, scroll-10s.mp4）
+notes: "静的取得のみ（HTML 323,440字 + CSS 5本 合計177,644字）。描画・スクショなし。計測は観察 O-20261116-fe-tinybird-hardborder を参照。"

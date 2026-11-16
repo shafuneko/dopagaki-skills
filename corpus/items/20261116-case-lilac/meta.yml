@@ -1,0 +1,13 @@
+# 素材メタ情報。ディレクトリ名と id を一致させること。
+id: 20261116-case-lilac
+title: "Mrs. GREEN APPLE「ライラック」"
+kind: video
+source: "https://news.yahoo.co.jp/articles/48b3c84cf3f31e892f2896a720c341990e7b58be"
+# 上記は「ドパガキ」評を確認した記事のURL。作品の一次URL（公式MV）は未確認。
+author: "Mrs. GREEN APPLE"
+captured_at: 2026-11-16
+added_by: research-case
+rights: third-party
+axes: [tempo, intensity, audio, reward]
+media: []
+notes: "「ドパガキ」という語の発生源とされる曲。作者の意図は未確認で、評だけが先行している。"

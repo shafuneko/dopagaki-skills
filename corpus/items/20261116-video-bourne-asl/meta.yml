@@ -1,0 +1,19 @@
+# 素材メタ情報。ディレクトリ名と id を一致させること。
+# 値は「key: value」または「key: [a, b]」の形で書く（build-index.mjs が読む簡易YAML）。
+id: 20261116-video-bourne-asl
+title: "ボーン・スプレマシー ASL 2.4秒（Business Insider の記事）"
+kind: video
+# kind: site | screenshot | video | code | text
+source: "https://www.businessinsider.com/jason-bourne-ruined-action-movies-hollywood-film-cinema-2018-4"
+# 出典URL。取得できない場合は「どこで見たか」を書く
+author: "Business Insider"
+captured_at: 2026-11-16
+added_by: research-video
+# 追加した人・エージェントの名前
+rights: third-party
+# rights: third-party | own | cc
+axes: [tempo, motion]
+# 予想される観察軸（観察で確定させる）: tempo, intensity, motion, reward, audio, copy, flow, style, restraint, backlash
+media: []
+# corpus/private/<id>/ 内の相対パス（例: first-view.png, scroll-10s.mp4）
+notes: "ASL 2.4 秒は文献値。動画そのものは視聴・保存していない。原典の計測条件は記事に記載なし＝未確認"

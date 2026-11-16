@@ -75,16 +75,21 @@ skills/dopagaki-frontend/SKILL.md ← 薄い入口。詳細は references/ に�
 - [docs/04-decisions/](docs/04-decisions/) — 設計判断の記録（ADR）
 - [docs/05-hypotheses.md](docs/05-hypotheses.md) — 作業仮説の台帳
 - [docs/06-content-survey-codex-20261116.md](docs/06-content-survey-codex-20261116.md) — 実作品の初回調査（Codex）
+- [docs/07-similar-content-codex-20261116.md](docs/07-similar-content-codex-20261116.md) — 類似コンテンツの調査（Codex）
+- [research/README.md](research/README.md) — 調査メモの置き場（索引の対象外）
+  - [research/20261116-psych-refs.md](research/20261116-psych-refs.md) — 心理学の実証文献レビュー（実証/議論中/俗説の3分類、H1〜H7 判定）
+  - [research/20261116-a11y-and-risk.md](research/20261116-a11y-and-risk.md) — WCAG・前庭障害・自動再生・規制
+  - [research/20261116-neighbor-concepts.md](research/20261116-neighbor-concepts.md) — 近縁概念（brainrot / hyperpop / 脳汁 など）との差分
 - [skills/dopagaki-production/references/sources.md](skills/dopagaki-production/references/sources.md) — 資料台帳
 - [evals/rubric.md](evals/rubric.md) — ドパガキ度ルブリック草案と制御可能性ゲート
 - [tools/build-index.mjs](tools/build-index.mjs) — 索引生成・整合性検査
 
 ## 現在の状態と次の一手
 
-- 骨組みはできた。規則・傾向はまだ0件。**素材と観察を集める段階**。
-- [ ] 素材を10件入れる（まずは自分たちの手元の作品・実在作品から）
-- [ ] 観察を10本書き、徴候の語彙を揃える
-- [ ] 最初の傾向を1本立てる（3観察以上）
+- 骨組みはできた。素材と観察が入り始めた段階（2026-11-16 時点で `node tools/build-index.mjs` → 素材 9 / 観察 7 / 傾向 0 / 規則 0）。
+- [ ] 素材を20件まで増やす（手元の作品＋実在作品。`corpus/private/` に録画10〜20秒を必ず添える）
+- [x] 観察を10本書く → 現在7本。徴候の語彙（S番号）を揃える
+- [ ] 最初の傾向を1本立てる（3観察以上が同じ徴候を指したら）
 - [ ] 最初の規則を1本、強度つきで書く
 - [ ] スキル2つの統合方針を決める（[ADR 0004](docs/04-decisions/0004-two-structures-merge.md)）
 - [ ] `.stignore` に `.git` を入れて、Syncthing が `.git` を同期しないようにする（[tools/stignore.sample](tools/stignore.sample)）
