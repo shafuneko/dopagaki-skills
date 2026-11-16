@@ -1,0 +1,18 @@
+# Syncthing の管理ディレクトリ
+/.stfolder/
+/.stignore
+/.stversions/
+
+# 第三者の素材・大容量メディア（同期はするが Git には載せない）
+/corpus/private/*
+!/corpus/private/README.md
+
+# 生成物
+/dist/
+
+# 依存・一時ファイル
+node_modules/
+*.tmp
+*.log
+.DS_Store
+Thumbs.db

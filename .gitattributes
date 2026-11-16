@@ -1,0 +1,22 @@
+* text=auto eol=lf
+
+# メディアは絶対に変換しない
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.gif binary
+*.avif binary
+*.mp4 binary
+*.webm binary
+*.mov binary
+*.zip binary
+*.pdf binary
+
+# 両側が追記するログは union マージ（追記が衝突で消えないように）
+chat.txt merge=union
+
+# Markdown は LF 固定（差分の暴発を防ぐ）
+*.md text eol=lf
+*.yml text eol=lf
+*.mjs text eol=lf

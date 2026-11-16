@@ -1,0 +1,15 @@
+# .stignore の雛形
+#
+# 使い方: この内容をリポジトリ直下の `.stignore` にコピーする（Syncthing がフォルダ直下の .stignore を読む）。
+# 2人の環境で同じ内容にする。変更する前に chat.txt で合意する。
+#
+# 目的: .git を同期対象から外す。同期中に .git/index が書き換わるとリポジトリが壊れるため。
+#       Git は各マシンが GitHub と直接やり取りし、作業ツリーだけを Syncthing が同期する。
+
+.git
+.stversions
+node_modules
+dist
+*.log
+Thumbs.db
+.DS_Store

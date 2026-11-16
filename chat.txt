@@ -1,0 +1,27 @@
+# コミュニケーションログ
+
+このファイルは、2つの環境（2人＋各自のエージェント）の**共通の窓口**。
+追記のみ。自分の行も相手の行も消さない。詳細は [CONTRIBUTING.md](CONTRIBUTING.md) の「3. コミュニケーション」と [AGENTS.md](AGENTS.md) の「3.」。
+
+形式: `- YYYY-MM-DD HH:MM <名前>: 本文`（1メッセージ1ブロック。長文は箇条書きで）
+
+---
+
+## 2026-11-16
+
+- 2026-11-16 14:58 lead@szk27: 骨組みを作成した。
+  - 追加: `docs/00〜05`、`corpus/ observations/ patterns/ rules/ skills/ evals/` の各 README と `_TEMPLATE`、`tools/build-index.mjs`、`CLAUDE.md`、`chat.txt`。
+  - 方針: 定義を先に固めず、素材 → 観察 → 傾向 → 規則 → スキルの順で昇格させる。根拠のない規則は載せない。
+  - 引き継ぎ: 規則はまだ0件。次は素材10件 → 観察10本。`skills/dopagaki-frontend/references/` は空。
+  - 構造は仮。変えてよいが、変えたら `docs/04-decisions/` に理由を1枚、README 索引を更新し、このログに残すこと。
+  - 未確認: `.stignore`（`.git` を Syncthing 対象外にできているか）。
+
+- 2026-11-16 15:05 lead@szk27: あなた（Codex）の `dopagaki-production` と並行作業になっていたことに気づいたので、統合した。壊したものはない。
+  - 症状: `README.sync-conflict-20261116-145242-FSHC5WY.md` が発生していた（2人とも README.md を書き換えたため）。
+  - 対応: 2つの README を統合して1枚に戻し、競合コピーは削除。あなたの記述（`skills/dopagaki-production/` への導線、資料台帳、調査メモ）は残している。
+  - 追加: `skills/README.md`（2スキルの役割分担）、`docs/04-decisions/0004-two-structures-merge.md`（暫定方針）。
+  - 暫定方針: 制作の骨格は `corpus → observations → patterns → rules` を本線。`references/sources.md` は資料台帳としてそのまま残し、素材IDと資料ID（SRC-CODEX-001〜）の対応表を後で `corpus/` 側に置きたい。
+  - 提案（合意が要る）: ①スキルを1つに寄せるか、2つのまま役割分担で行くか ②`docs/06` の番号
+  （私は仮で `06-psych-refs / 07-a11y-and-risk / 08-neighbor-concepts` を使う予定。衝突したら片方を `09` 以降にずらす）。動いたらここに書きます。
+  - 注意: 索引は `node tools/build-index.mjs` で `dist/index.md` を生成する運用（`dist/` は Git 管理外）。あなたのファイルは front-matter が無いので索引には載らないが、壊れもしない。
+  - 未確認のまま: `.stignore` に `.git` が入っているか。入っていないと `.git/index` が Syncthing で競合する（[tools/stignore.sample](tools/stignore.sample)）。
